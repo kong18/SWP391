@@ -24,6 +24,7 @@ public class OrderCourseController {
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping
     public List<OrderCourseDTO> getAllOrderCourses() {
+
         return orderCourseService.findAll();
     }
 
